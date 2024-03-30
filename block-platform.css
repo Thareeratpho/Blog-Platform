@@ -1,62 +1,104 @@
-/*nav bar*/
-.topnav {
-    overflow: hidden;
-    background-color: #333;
-    position: relative;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.topnav #myLinks {
+body {
+    height: 100vh;
+    background-color: #008DDA;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+header {
+    position: relative;
+    padding: 0 2rem;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo-container .active {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    gap: 2rem;
+
+}
+
+.navbar :hover {
+    color: #000;
+}
+
+.toggle_btn {
+    color: #fefefe;
+    font-size: 1.5rem;
+    cursor: pointer;
     display: none;
 }
 
-.topnav .active {
-    text-align: center;
-    font-size: 200%;
+.sign-log-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.topnav a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-}
-
-.topnav a.icon {
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-.fa-bars {
-    font-size: 150%;
-}
-
-/*log in*/
-.login-container {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+.sign-log-container ul li {
+    display: inline-block;
+    /* Display list items in the same row */
+    margin-left: 2px;
+    /* Add margin between list items */
 }
 
 .loginbutton {
-    background-color: #4CAF50;
+    background-color: yellow;
+    color: #fff;
     border: none;
-    border-radius: 50px;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 14px;
     cursor: pointer;
-    border-radius: 50px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.signupbutton {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .loginbutton:hover {
-    background-color: #45a049;
+    background-color: yellowgreen;
+    transform: scale(1.05);
+}
+
+.signupbutton:hover {
+    background-color: #ff574d;
+    transform: scale(1.05);
 }
 
 .modal {
@@ -68,7 +110,7 @@
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal-content {
@@ -76,51 +118,8 @@
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 30%;
-    border-radius: 5px;
-}
-
-.modal .close {
-    background-color: #fefefe;
-}
-
-.modal h2,
-.modal form,
-.modal label,
-.modal input[type="text"],
-.modal input[type="password"],
-.modal button {
-    background-color: transparent;
-    margin-top: 10px;
-}
-
-.modal h2{
-    text-align: center;
-}
-
-.modal form{
-    display: flex;
-    flex-direction: column;
-}
-
-.modal input[type="text"],
-.modal input[type="password"]{
-    border-radius: 5px;
-    width: 100;
-}
-
-.modal button{
-    border: none;
-    border-radius: 50px;
-    width: 15%;
-    margin-top: 20px;
-    color: #fefefe;
-    background-color: black;
-}
-
-.modal button:hover {
-    color: black;
-    background-color: #aaa;
+    width: 80%;
+    max-width: 400px;
 }
 
 .close {
@@ -135,4 +134,46 @@
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.dropdown li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown .login-container,
+.dropdown .signup-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media(max-width: 680px) {
+
+    .navbar,
+    .sign-log-container {
+        display: none;
+    }
+
+    .toggle_btn {
+        display: block;
+    }
+
+    .dropdown{
+        display: block;
+    }
 }

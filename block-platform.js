@@ -1,4 +1,3 @@
-//nav
 function navFunction() {
     var nav = document.getElementById("myLinks");
     if (nav.style.display === "block") {
@@ -29,3 +28,24 @@ function loginFunction() {
         }
     }
 };
+
+function signupFunction() {
+    var modal = document.getElementById("signup-modal");
+    var btn = document.getElementById("signupbutton");
+    var span = document.getElementsByClassName("close")[1];
+    if (btn && modal) {
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+    }
+    if (span && modal) {
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+    }
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+}

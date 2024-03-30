@@ -15,46 +15,107 @@
             font-family: "Poppins", sans-serif;
             font-weight: 400;
             font-style: normal;
-            background-color: #008DDA;
         }
     </style>
 </head>
 
-<body>
-    <header></header>
+<header>
     <nav>
-        <div class="nav-container">
-            <div class="topnav">
-                <a href="javascript:void(0);" class="icon" onclick="navFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-                <a href="#home" class="active">All About Beauty</a>
-                <div id="myLinks">
-                    <a href="#news">My Profile</a>
-                    <a href="#contact">Create Block</a>
-                    <a href="#about">About</a>
-                </div>
-            </div>
+        <div class="logo-container">
+            <a href="#home" class="active">Cosmatics</a>
         </div>
-        <div class="signup-login-container">
-            <div class="login-container">
-                <button id="loginbutton" class="loginbutton" onclick="loginFunction()">Log in</button>
-            </div>
-            <div id="login-modal" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <h2>Login</h2>
-                    <form>
-                        <label for="username">Username :</label>
-                        <input type="text" id="username" name="username" required>
-                        <label for="password">Password :</label>
-                        <input type="password" id="password" name="password" required>
-                        <button id="submitbotton" type="submit">Log in</button>
-                    </form>
+        <div class="nav-container">
+            <ul class="navbar">
+                <li><a href="#MyProfile">My Profile</a></li>
+                <li><a href="#CreateBlock">Create Block</a></li>
+                <li><a href="#Blogs">Blogs</a></li>
+            </ul>
+        </div>
+        <div class="sign-log-container">
+            <ul class="sl-container">
+                <li class="login-container">
+                    <div class="login">
+                        <button id="loginbutton" class="loginbutton" onclick="loginFunction()">Log in</button>
+                    </div>
+                    <div id="login-modal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h2>Login</h2>
+                            <form>
+                                <label for="username">Username :</label>
+                                <input type="text" id="username" name="username" required>
+                                <label for="password">Password :</label>
+                                <input type="password" id="password" name="password" required>
+                                <button id="submitbotton" type="submit">Log in</button>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+                <li class="signup-container">
+                    <div class="signup">
+                        <button id="signupbutton" class="signupbutton" onclick="signupFunction()">Sign Up</button>
+                    </div>
+                    <div id="signup-modal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h2>Login</h2>
+                            <form>
+                                <label for="username">Username :</label>
+                                <input type="text" id="username" name="username" required>
+                                <label for="password">Password :</label>
+                                <input type="password" id="password" name="password" required>
+                                <button id="submitbotton" type="submit">Log in</button>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="dropdown">
+            <li><a href="#MyProfile">My Profile</a></li>
+            <li><a href="#CreateBlock">Create Block</a></li>
+            <li><a href="#Blogs">Blogs</a></li>
+            <li class="login-container">
+                <div class="login">
+                    <button id="loginbutton" class="loginbutton" onclick="loginFunction()">Log in</button>
                 </div>
-            </div>
+                <div id="login-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>Login</h2>
+                        <form>
+                            <label for="username">Username :</label>
+                            <input type="text" id="username" name="username" required>
+                            <label for="password">Password :</label>
+                            <input type="password" id="password" name="password" required>
+                            <button id="submitbotton" type="submit">Log in</button>
+                        </form>
+                    </div>
+                </div>
+            </li>
+            <li class="signup-container">
+                <div class="signup">
+                    <button id="signupbutton" class="signupbutton" onclick="signupFunction()">Sign Up</button>
+                </div>
+                <div id="signup-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>Login</h2>
+                        <form>
+                            <label for="username">Username :</label>
+                            <input type="text" id="username" name="username" required>
+                            <label for="password">Password :</label>
+                            <input type="password" id="password" name="password" required>
+                            <button id="submitbotton" type="submit">Log in</button>
+                        </form>
+                    </div>
+                </div>
+            </li>
         </div>
     </nav>
-</body>
+</header>
 
 </html>
