@@ -169,6 +169,10 @@ nav {
         display: none;
     }
 
+    .dropdown :hover {
+        color: #000;
+    }
+
     .toggle_btn {
         display: block;
     }
