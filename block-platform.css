@@ -256,3 +256,97 @@ nav {
 .search-container button:hover {
     background-color: #0056b3;
 }
+
+.trend-contain h1{
+    text-align: center;
+    margin-top: 5%;
+    color: #fefefe;
+}
+
+.trend-box {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.trend {
+    display: inline-block;
+    margin: 20px;
+}
+
+
+.trend {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    max-width: 300px;
+}
+
+.trend:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.trend-product {
+    padding: 20px;
+}
+
+.trend .top{
+    display: flex;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+.t-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.title {
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.title:hover {
+    color: #ff574d;
+}
+
+
+.date span {
+    color: #666;
+    font-size: 14px;
+}
+
+.trend .trend-author{
+    display: block;
+}
+
+.trend-author {
+    color: #666;
+    font-size: 14px;
+}
+
+.read-btn {
+    color: #ff574d;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s ease; 
+}
+
+.read-btn:hover {
+    text-decoration: underline;
+    color: #ff6f61;
+}
+
