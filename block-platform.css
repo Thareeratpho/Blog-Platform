@@ -118,8 +118,25 @@ nav {
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
+    border-radius: 5px;
     width: 80%;
     max-width: 400px;
+}
+
+.modal h2 {
+    text-align: center;
+}
+
+.modal form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.modal form input {
+    margin-bottom: 10px;
 }
 
 .close {
@@ -136,16 +153,35 @@ nav {
     cursor: pointer;
 }
 
+@media (max-width: 680px) {
+    .modal-content {
+        margin: 10% auto;
+        padding: 15px;
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .close {
+        font-size: 20px;
+    }
+}
+
 .dropdown {
     display: none;
     position: absolute;
     right: 2rem;
     top: 60px;
+    height: 0;
     width: 300px;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.open {
+    height: 260px;
 }
 
 .dropdown li {
@@ -177,7 +213,14 @@ nav {
         display: block;
     }
 
-    .dropdown{
+    .dropdown {
         display: block;
+    }
+}
+
+@media(max-width: 375px) {
+    .dropdown {
+        left: 2rem;
+        width: unset;
     }
 }
