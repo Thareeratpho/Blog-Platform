@@ -257,7 +257,7 @@ nav {
     background-color: #0056b3;
 }
 
-.trend-contain h1{
+.trend-contain h1 {
     text-align: center;
     margin-top: 5%;
     color: #fefefe;
@@ -294,14 +294,14 @@ nav {
     padding: 20px;
 }
 
-.trend .top{
+.trend .top {
     display: flex;
     margin-bottom: 10px;
     font-weight: bold;
     text-align: center;
     align-content: center;
     justify-content: center;
-    
+
 }
 
 .t-img img {
@@ -329,7 +329,7 @@ nav {
     font-size: 14px;
 }
 
-.trend .trend-author{
+.trend .trend-author {
     display: block;
 }
 
@@ -342,11 +342,144 @@ nav {
     color: #ff574d;
     font-size: 14px;
     text-decoration: none;
-    transition: color 0.3s ease; 
+    transition: color 0.3s ease;
 }
 
 .read-btn:hover {
     text-decoration: underline;
     color: #ff6f61;
+}
+
+.blogs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 10%;
+}
+
+.thai-block-contain h1 {
+    text-align: center;
+    color: #fefefe;
+}
+
+.thai-box {
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 300px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.thai-product {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.thai-img {
+    flex: 0 0 auto;
+    margin-right: 20px;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+}
+
+.thai-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thai-product-text {
+    flex: 1;
+}
+
+.date {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 5px;
+}
+
+.title {
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.title:hover {
+    color: #ff6b6b;
+}
+
+.author {
+    margin-top: 10px;
+}
+
+.trend-author {
+    font-size: 16px;
+    color: #555;
+}
+
+.read-btn {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.read-btn:hover {
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+
+.thai-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.profile-picture {
+    margin-right: 20px;
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-details {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-details h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.profile-details p {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.profile-details p:last-child {
+    margin-bottom: 0;
 }
 
