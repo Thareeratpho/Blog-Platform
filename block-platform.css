@@ -2,11 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
     height: 100vh;
-    background-color: #008DDA;
+    background-color: #FC819E;
 }
 
 li {
@@ -64,13 +65,11 @@ nav {
 
 .sign-log-container ul li {
     display: inline-block;
-    /* Display list items in the same row */
     margin-left: 2px;
-    /* Add margin between list items */
 }
 
 .loginbutton {
-    background-color: yellow;
+    background-color: #F7418F;
     color: #fff;
     border: none;
     border-radius: 20px;
@@ -81,7 +80,7 @@ nav {
 }
 
 .signupbutton {
-    background-color: #ff6f61;
+    background-color: #F7418F;
     color: #fff;
     border: none;
     border-radius: 20px;
@@ -92,12 +91,14 @@ nav {
 }
 
 .loginbutton:hover {
-    background-color: yellowgreen;
+    background-color: #FFF3C7;
+    color: black;
     transform: scale(1.05);
 }
 
 .signupbutton:hover {
-    background-color: #ff574d;
+    background-color: #FFF3C7;
+    color: black;
     transform: scale(1.05);
 }
 
@@ -245,7 +246,7 @@ nav {
 .search-container button {
     padding: 10px;
     border: none;
-    background-color: #fefefe;
+    background-color: #FFF3C7;
     color: black;
     width: 50px;
     border-radius: 50px;
@@ -254,7 +255,7 @@ nav {
 }
 
 .search-container button:hover {
-    background-color: #0056b3;
+    background-color: #FEC7B4;
 }
 
 .trend-contain h1 {
@@ -320,7 +321,7 @@ nav {
 }
 
 .title:hover {
-    color: #ff574d;
+    color: #F7418F;
 }
 
 
@@ -339,15 +340,15 @@ nav {
 }
 
 .read-btn {
-    color: #ff574d;
-    font-size: 14px;
     text-decoration: none;
+    color: #F7418F;
+    font-size: 14px;
     transition: color 0.3s ease;
 }
 
 .read-btn:hover {
     text-decoration: underline;
-    color: #ff6f61;
+    color: #FEC7B4;
 }
 
 .blogs {
@@ -411,7 +412,7 @@ nav {
 }
 
 .title:hover {
-    color: #ff6b6b;
+    color: #F7418F;
 }
 
 .author {
@@ -424,7 +425,7 @@ nav {
 }
 
 .read-btn {
-    color: #007bff;
+    color: #F7418F;
     text-decoration: none;
     font-weight: bold;
     margin-left: 10px;
@@ -618,7 +619,7 @@ h1 {
 }
 
 /* Existing styles */
-.blog-container{
+.blog-container {
     display: flex;
     justify-content: center;
     margin: 2%;
@@ -671,7 +672,6 @@ h1 {
 
 .form-group label {
     display: block;
-    font-weight: bold;
 }
 
 .form-group input[type="text"],
@@ -685,7 +685,7 @@ h1 {
 }
 
 .btn-submit {
-    background-color: #4CAF50;
+    background-color: #F7418F;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -694,5 +694,54 @@ h1 {
 }
 
 .btn-submit:hover {
-    background-color: #45a049;
+    background-color: #F7418F;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    margin-top: 0;
+}
+
+.container input[type="text"],
+.container textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+
+.container input[type="submit"] {
+    background-color: #F7418F;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 20%;
+}
+
+.container input[type="submit"]:hover {
+    background-color: #F7418F;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .container input[type="submit"] {
+        width: 100%;
+    }
 }
